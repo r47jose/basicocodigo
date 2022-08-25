@@ -1,0 +1,47 @@
+* {
+  text-transform: uppercase;
+}
+
+p {
+  color: 222;
+  font-size: 16px;
+}
+div {
+  height: 200px;
+  padding: 20px;
+  width: 200px;
+  margin-bottom: 20px;
+  background-color: aquamarine;
+}
+div a, div p {
+  color: red;
+}
+
+a.btn-comprar {
+  color: black;
+}
+
+.principal {
+  width: 100px;
+}
+a {
+  width: 100px;
+  height: 20px;
+  background-color: antiquewhite;
+}
+a:hover {
+  font-size: 20px;
+  color: red;
+  background-color: brown;
+}
+
+a:visited {
+  color: red;
+}
+/* ul li:nth-child(1) {
+
+}
+Seleciona o (n) para estilizar 
+*/
+/* Quanto mais especifico, mais ira se sobresair nos elementos, e o que vem por último vem mais forte */
+/* www.w3schools.com/cssref */
