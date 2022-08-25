@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+
+<body>
+
+  <h1>Bikcraft Bicicletas Personalizadas</h1>
+
+  <form action="enviar.php" method="post" name="form">
+    <!-- 
+      FORM ATRIBUTOS
+      - action
+    Define a ação do formulário
+    -method
+    Especifica se é get ou post
+    - name
+    Nome único do elemento -->
+
+
+    <div>
+      <label for="nome">Nome *</label>
+      <input type="text" name="nome" id="nome" required>
+    </div>
+    <br>
+    <div>
+      <label for="email">E-mail *</label>
+      <input type="text" name="email" id="email" required>
+    </div>
+    <div>
+      <h2>Escolha um tipo de Bicicleta</h2>
+    </div>
+    <div>
+      <label for="esporte"><input type="checkbox" name="esporte" id="esporte" value="esporte">Esporte</label>
+      <label for="passeio"><input type="checkbox" name="passeio" id="passeio" value="passeio">Passeio</label>
+      <label for="retro"><input type="checkbox" name="retro" id="retro" value="retro">Retro</label>
+    </div>
+    <br>
+    <div>
+      <label for="mensagem">Mensagem</label>
+    </div>
+    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea> <br>
+
+    <!-- 
+  INPUT ATRIBUTOS
+  -type
+Define o tipo de input, pode ser checkbox, password, text, button e outros
+-required
+Especifica se é obrigatório ou não o campo
+- name
+Nome único do elemento 
+-id
+ID único referente ao label
+
+www.w3.org/wiki/HTML/Elements/input
+ -->
+
+    <div>
+      <label for="pet-select">Choose a pet:</label>
+
+      <select name="pets" id="pet-select">
+        <option value="">--Please choose an option--</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster">Hamster</option>
+        <option value="parrot">Parrot</option>
+        <option value="spider">Spider</option>
+        <option value="goldfish">Goldfish</option>
+      </select>
+      <!-- 
+        teste select
+       -->
+
+    </div>
+    <br>
+    <div>
+      <button type="submit" name="enviar" id="enviar">Solicitar Orçamento</button>
+    </div>
+    <!-- 
+      BUTTON
+  -type
+  Define o tipo de botão, pode ser reset, submit
+  - name
+  Nome único do elemento
+     -->
+
+  </form>
+
+</body>
+
+</html>
