@@ -1,0 +1,36 @@
+body {
+  background-color: #333;
+  background-image: url("img/teste.jpg");
+  background-repeat: unset;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* 
+• background-color define a cor de fundo. Valores: rgba, hexadecimal 
+• background-image define a imagem de fundo. Valor: url(“") da imagem 
+• background-repeat define se a imagem repete ou não. Valores: repeat, repeat-x, no-repeat
+ */
+
+
+/* 
+• background-attatchment define se a imagem é fixa. Valores: fixed, scroll 
+• background-position posiciona a imagem. Valores: center center, left top, right bottom 
+• background-size define o tamanho da imagem. Valores: cover, px, %
+ */
+
+div {
+  width: 500px;
+  height: 500px;
+  background: #000 url("img/esporte-1.jpg") no-repeat  center; /* outro jeito de escrever o codigo */
+  background-size: cover;
+  margin: 0 auto;
+  color: white;
+  box-shadow:  /*inset = sombra pra dentro */ 15px /* Horizontal*/ 15px /* Vertical*/ 10px #000 ;
+}
+
+/*
+ box-shadow adiciona uma sombra ao box. Valores: horizontal vertical blur cor
+é possível colocar inset para criar uma sombra interna. 
+• visibility define se o elemento é visível ou não. Valores: hidden, visible
+ */
