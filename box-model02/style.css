@@ -1,0 +1,76 @@
+.container {
+  width: 800px;
+
+  margin: 0 auto;
+}
+header {
+  width: 800px;
+  height: 60px;
+  background-color: black;
+  padding: 20px 0px;
+  margin-bottom: 20px;
+}
+
+h1 ,p  {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.conteudo{
+  width: 800px;
+  overflow: auto;
+  /* 
+  • overflow especifica o que acontece quando o conteúdo for maior que a caixa dele.
+  Valores: visible, hidden, auto, scroll 
+  • Dica: usar overflow: auto na caixa que envolve elementos flutuantes
+  */
+  margin-bottom: 20px;
+}
+article {
+  width: 580px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.728);
+  float: left;
+}
+/* 
+• float faz com que um elemento de bloco flutue ao lado de outro. Valores: left, right, none 
+• clear impede que elementos flutuem ao seu lado. Valores: both, left, right, non
+*/
+aside {
+width: 200px;
+height: 300px;
+background-color: rgba(62, 38, 33, 0.893);
+float: left;
+margin-left: 20px;
+}
+
+footer {
+  width: 800px;
+  height: 60px;
+  padding: 20px 0px;
+  background-color: rgb(229, 4, 4);
+  clear: both;
+}
+/* 
+• position define o posicionamento do elemento. Valores: static, absolute, relative, fixed. 
+• top, left, bottom e right posicionam elementos com position: absolute, relative ou fixed. 
+• z-index define qual elemento vem por cima ou por baixo. O maior valor vem por cima 
+position relative na tag pai faz com que o position absolute passa a referenciar 
+a classe pai como absoluta
+*/
+li {
+display: inline;
+/*
+• display define o comportamento do elemento. Elementos como span, em e 
+strong possuem por padrão o display inline. Elementos inline não quebram 
+linhas. div, article, p, h1, li e outros possuem por padrão o display block, então 
+sempre que adicionados quebram uma linha. 
+• É possível declarar width e height para elementos de bloco, mas não para 
+elementos inline. Existe também o inline-block, que por padrão não quebra a 
+linha, mas permite declararmos width e height
+*/
+  
+}
